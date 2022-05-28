@@ -15,5 +15,7 @@ This is my first project.
 3.It recommend you similar movies name
 ![Screenshot (313)](https://user-images.githubusercontent.com/80270221/170835629-464685c3-42f2-42da-b11d-7525463b8559.png)
 
+https://deepika-sys.github.io/movie-world/ click here for quick preview of my project.
+
 # sources of dataset 
 IMDB 5000 movie dataset
