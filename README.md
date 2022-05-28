@@ -1,8 +1,11 @@
 # Movie-recommendation-system
 # The-Movie-World
 The application induce a classifier to discriminate between interesting and uninteresting items for the user.
+
 It provide name of movies which are similar to user provided movie name.
+
 This is my first project.
+
 1.Home page where it take input (Movie name)
 ![Screenshot (311)](https://user-images.githubusercontent.com/80270221/170835624-5881ffcb-5b36-43c5-b7b4-c7999be81da5.png)
 2.Like input Batman
