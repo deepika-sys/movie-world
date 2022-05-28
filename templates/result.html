@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* style the body */
+    body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ29uszJBuuSu0PiWyLMnM0ByuntEwFa1pHzMpohabLWwVCt8zwaZgK9ceuU9h_OMX2oDk&usqp=CAU");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (min-width: 32rem) {
+        body {
+            font-size: 102.5%;
+        }
+
+        .movies {
+            font-size: 107.5%;
+        }
+
+        .table_body {
+            font-size: 107.5%;
+        }
+    }
+
+    @media (min-width: 65rem) {
+        body {
+            font-size: 107.5%;
+        }
+
+        .movies {
+            font-size: 115.5%;
+        }
+
+        .table_body {
+            font-size: 115.5%;
+        }
+    }
+
+    @media (min-width: 91rem) {
+        body {
+            font-size: 115%;
+        }
+
+        .movies {
+            font-size: 120%;
+        }
+
+        .table_body {
+            font-size: 120%;
+        }
+    }
+
+    @media (min-width: 115rem) {
+        body {
+            font-size: 120%;
+        }
+
+        .movies {
+            font-size: 125%;
+        }
+
+        .table_body {
+            font-size: 125%;
+        }
+    }
+
+    @media (min-width: 130rem) {
+        body {
+            font-size: 125%;
+        }
+
+        .movies {
+            font-size: 126%;
+        }
+
+        .table_body {
+            font-size: 126%;
+        }
+    }
+
+    /* movies class */
+    .movies {
+        align-items: center;
+        justify-content: center;
+        color: rgb(247, 240, 240);
+        padding: 210px;
+        font-size: 80px;
+    }
+
+    .movies p {
+        color: #ddd;
+    }
+
+    /* table */
+    .table_body {
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 60px;
+    }
+
+    .table_body td,
+    .table_body th {
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+</style>
+
+<body>
+
+    <div class="movies">
+        <h2><u>Recommendations:</u></h2>
+        <p>For movie: {{ search_name }}</p>
+        <!-- table define -->
+        <table>
+            <tbody class="table_body">
+                <tr>
+                    <td>{{ movie_names[0] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[1] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[2] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[3] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[4] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[5] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[6] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[7] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[8] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[9] }}</td>
+                </tr>
+        </table>
+        <br>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src='https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js'></script>
+</body>
+
+</html>

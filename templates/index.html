@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>MOVIE GROUND</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 80px;
+            text-align: center;
+            color: rgb(247, 15, 15);
+            background-image: url("https://media.istockphoto.com/photos/old-wall-texture-cement-dark-black-gray-background-abstract-grey-picture-id1191995863?k=20&m=1191995863&s=612x612&w=0&h=6BngnqKqrg8QfKog8yTi9-_63wHepH2j-VtDU4g0N88=");
+            background-size: 100% 100%;
+
+
+        }
+
+        /* Increase the font size of the heading */
+        .header h1 {
+            font-size: 75px;
+        }
+
+        /* Column container */
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            background-image: url("https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2019/02/movie-apps.jpg?q=50&fit=contain&w=1500&h=750&dpr=1.5");
+            -ms-flex: 30%;
+            /* IE10 */
+            flex: 30%;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .side h2 {
+            color: aliceblue;
+            font-size: 25ox;
+        }
+
+        .side h4 {
+            color: rgb(175, 175, 175);
+            font-size: 25ox;
+        }
+
+        .side p,
+        li,
+        ul {
+            font-size: 25ox;
+            color: rgb(67, 159, 216);
+        }
+
+        /* Main column */
+        .main {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQDuq0h5uN3uBfsaGwYdqT-9mkKYtegh-9kcWMwiF_W4GHOku0CdZTj33Moc8_6HQPbHs&usqp=CAU");
+            justify-content: center;
+            background-repeat: no-repeat;
+            color: #ddd;
+            background-size: 100% 100%;
+            -ms-flex: 70%;
+            /* IE10 */
+            flex: 70%;
+            padding: 210px;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: black;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            background: #ddd;
+        }
+
+        .footer li,
+        ul {
+            font-size: 30px;
+            color: saddlebrown;
+        }
+    </style>
+</head>
+
+<body>
+<!-- header -->
+    <div class="header">
+        <h1><u>Welcome to movie world!</u></h1>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About:</h2>
+            <h4><u>Recommendation system</u></h4>
+            <p>Recommender systems are a way of suggesting or similar items and ideas to a user’s specific way of
+                thinking.</p>
+            <h4><u>Recommendation types</u></h4>
+            <li>Collaborative Filtering</li>
+            <li>Content-Based Recommendation</li>
+            <h4><u>Used</u></h4>
+            <p>Content based recommendation system</p>
+            <p>Dataset</p>
+            <li>tmdb_5000_movies data set and</li>
+            <li>tmdb_5000_credits data set from kaggle.</li>
+
+        </div>
+<!-- main -->
+        <div class="main">
+            <h2>Movie Recommendation System</h2>
+            <form action="{{ url_for('final') }}" method="POST">
+                <input type="text" id="movie_name" name="movie_name" placeholder="Enter a full movie name" required />
+                <input type="submit" id="submission_button" value="Submit" />
+            </form>
+        </div>
+    </div>
+<!-- footer -->
+    <div class="footer">
+        <ul class=”list”>Contact:
+
+            <li class=”menu__item”>
+                <a class=”menu__link” href=https://www.linkedin.com/in/deepika-583a1b209 target=”_blank”>LinkedIn</a>
+            </li>
+            <li class=”menu__item”>
+                <a class=”menu__link” href="https://github.com/deepika-sys" target=”_blank”>Github</a>
+            </li>
+        </ul>
+    </div>
+    <script src='https://cdn.jsdeliver.net/npm/jquery@2.2.4/dist/jquery.min.js'></script>
+    <script src='https://cdn.jsdeliver.net/nom/animejs@3.1.0/lib/anime.min.js'></script>
+</body>
+
+</html>
