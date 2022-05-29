@@ -19,3 +19,4 @@ https://deepika-sys.github.io/movie-world/ click here for quick preview of my pr
 
 # sources of dataset 
 IMDB 5000 movie dataset
+(credits and movies)
